@@ -1,0 +1,64 @@
+% LaTeX Beamer theme "BETA" v. 1.1 - 19th May, 2017
+%
+% Copyright Jacopo Staccioli 2017 (j.staccioli@sssup.it)
+%
+% http://www.staccioli.org
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+\mode<presentation>
+
+\definecolor{betared}{RGB}{197,28,47}
+\definecolor{betagreen}{RGB}{24,99,24}
+\definecolor{betagray}{RGB}{160,160,160}
+\definecolor{betablue}{RGB}{0,91,163}
+
+\definecolor{beamer@blendedblue}{RGB}{0,91,163}
+\setbeamercolor{alerted text}{fg=betared,bg=white}
+\setbeamercolor{example text}{fg=betagreen,bg=white}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+  
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{fg=white, bg=betagray}
+
+\setbeamercolor*{author in head/foot}{parent=palette tertiary,bg=betablue}
+\setbeamercolor*{title in head/foot}{parent=palette secondary,bg=betablue}
+\setbeamercolor*{date in head/foot}{parent=palette primary,bg=betablue}
+
+\setbeamercolor*{section in head/foot}{parent=palette tertiary}
+\setbeamercolor*{subsection in head/foot}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
+\mode
+<all>

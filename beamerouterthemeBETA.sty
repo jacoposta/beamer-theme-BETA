@@ -1,0 +1,77 @@
+% LaTeX Beamer theme "BETA" v. 1.1 - 19th May, 2017
+%
+% Copyright Jacopo Staccioli 2017 (j.staccioli@sssup.it)
+%
+% http://www.staccioli.org
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+\mode<presentation>
+
+\defbeamertemplate*{footline}{BETA}
+{
+  \leavevmode%
+  \begin{tikzpicture}
+% 	\ifnum\thepage=1\relax%
+%  	\useasboundingbox (0,0) rectangle(\the\paperwidth,0.9);
+%  	\node at (1,0.515) {\includegraphics[width=.125\textwidth]{BETA_logo}};
+%  	\fill[color=betablue] (1.97,0) rectangle (\the\paperwidth,0.9);
+%    \node at (11,1.75) {\includegraphics[scale=0.6]{UdS_logo}};
+%  	\fi
+ 	\ifnum\thepage=1\relax%
+  	\useasboundingbox (0,0) rectangle(\the\paperwidth,0.9);
+  	\node at (1,0.515) {\includegraphics[width=.125\textwidth]{BETA_logo}};
+  	\fill[color=betablue] (1.97,0) rectangle (10.2,0.9);
+    \node at (11.5,0.45) {\includegraphics[width=.185\textwidth]{UdS_logo}};
+  	\fi
+ 	\ifnum\thepage>1\relax%
+  	\useasboundingbox (0,0) rectangle(\the\paperwidth,0.9);
+  	\node at (1,0.515) {\includegraphics[width=.125\textwidth]{BETA_logo}};
+  	\fill[color=betablue] (1.97,0) rectangle (\the\paperwidth,0.9);
+  	\node[right] at (1.9,0.65) {\scriptsize
+	\begin{beamercolorbox}[wd=.845\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+  	};  
+  	\node[right] at (1.9,0.2) {\scriptsize
+	\begin{beamercolorbox}[wd=.4225\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor\
+    \end{beamercolorbox}%	
+	\begin{beamercolorbox}[wd=.4225\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \end{beamercolorbox}
+  	};
+  	\fi
+  \end{tikzpicture}
+  \vskip0pt%
+}
+
+\defbeamertemplate*{headline}{BETA}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,right]{section in head/foot}%
+    \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,left]{subsection in head/foot}%
+    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+\mode
+<all>
